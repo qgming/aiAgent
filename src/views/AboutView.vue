@@ -3,7 +3,7 @@
     <div class="topAbout">
       <RouterLink class="backHome" to="/">返回首页</RouterLink>
       <div class="aboutName">关于</div>
-      <p>0.0.2</p>
+      <p>0.0.3</p>
     </div>
   </div>
 </template>
