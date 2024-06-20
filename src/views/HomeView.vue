@@ -56,10 +56,10 @@ export default {
       toolCards: [
         // 编辑精选
         [
-          { id: 1, logo: '../components/icons/biganzi.png', name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
-          { id: 4, logo: '../components/icons/wechat.png', name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
-          { id: 2, logo: '../components/icons/fanyi.png', name: "翻译器", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
-          { id: 3, logo: '../components/icons/xiaohongshu.png', name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
+          { id: 1, logo: '/src/components/icons/biganzi.png', name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
+          { id: 4, logo: '/src/components/icons/wechat.png', name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
+          { id: 2, logo: '/src/components/icons/fanyi.png', name: "翻译器", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
+          { id: 3, logo: '/src/components/icons/xiaohongshu.png', name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
 
         ],
         // 新媒体
