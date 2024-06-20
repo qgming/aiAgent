@@ -1,12 +1,12 @@
 <template>
   <div class="header">
-    <img class="logo" src="../components/icons/ai.png" alt="">
+    <img class="logo" src="../assets/images/ai.png" alt="">
     <ol class="headerOl">
       <li>
         <RouterLink class="upVip" to="/setting">升级会员</RouterLink>
       </li>
       <li class="upVip" @click="toggleDiv">联系我们 </li>
-      <img v-if="isDivVisible" class="callme" src="../components/weixin.png" alt="">
+      <img v-if="isDivVisible" class="callme" src="../assets/images/wxgzh.png" alt="">
       <li>
         <RouterLink class="toSetting" to="/setting">设置</RouterLink>
       </li>

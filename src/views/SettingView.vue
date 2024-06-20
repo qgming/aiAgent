@@ -14,12 +14,12 @@
       </div>
       <div class="pay" v-if="vipPay && !vipSwitch">
         <p>截图后付费</p>
-        <img class="apay" src="../components/wxpay.jpg" alt="微信支付">
-        <img class="apay" src="../components/zfb.jpg" alt="支付宝">
-        <img class="apay" src="../components/wxzs.jpg" alt="微信支付">
+        <img class="apay" src="../assets/images/wxpay.jpg" alt="微信支付">
+        <img class="apay" src="../assets/images/zfb.jpg" alt="支付宝">
+        <img class="apay" src="../assets/images/wxzs.jpg" alt="微信支付">
       </div>
       <div class="openVip" v-if="vipSwitch">
-        <img src="../components/vip.png" alt="会员">
+        <img src="../assets/images/vip.png" alt="会员">
         <div>
           <p style="font-size: larger;">已诚信付费解锁Pro</p>
           <p>感谢你，这将帮助我们更好地发展下去~</p>
