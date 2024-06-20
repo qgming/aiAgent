@@ -25,7 +25,7 @@
           <div class="anyCard">
             <div class="toolCard" @click="openTools(tool)" v-for="tool in getToolCards(index + 1)" :key="tool.id">
               <div class="logoBox">
-                <img class="toolLogo" :src="tool.logo" alt="">
+                <img class="toolLogo" :src=getImageUrl(tool.logo) alt="">
               </div>
               <div class="cardText">
                 <p class="cardName">{{ tool.name }}</p>
@@ -98,9 +98,9 @@ export default {
     };
   },
   methods: {
-    // getImageUrl(path) {
-    //   return new URL(path, import.meta.url).href;
-    // },
+    getImageUrl(path) {
+      return new URL(path, import.meta.url).href;
+    },
     getToolCards(categoryIndex) {
       return this.toolCards[categoryIndex - 1] || [];
     },
