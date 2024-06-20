@@ -56,25 +56,25 @@ export default {
       toolCards: [
         // 编辑精选
         [
-          { id: 1, logo: '../src/components/icons/biganzi.png', name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
-          { id: 4, logo: '../src/components/icons/wechat.png', name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
-          { id: 2, logo: '../src/components/icons/fanyi.png', name: "翻译器", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
-          { id: 3, logo: '../src/components/icons/xiaohongshu.png', name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
+          { id: 1, logo: '/components/icons/biganzi.png', name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
+          { id: 4, logo: '/components/icons/wechat.png', name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
+          { id: 2, logo: '/components/icons/fanyi.png', name: "翻译器", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
+          { id: 3, logo: '/components/icons/xiaohongshu.png', name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
 
         ],
         // 新媒体
         [
-          { id: 1, logo: '../src/components/icons/jizhe.png', name: "新闻记者", more: '以记者的身份写报道', prompt: '../prompt/001/xinwenjizhe.txt' },
-          { id: 2, logo: '../src/components/icons/xiaohongshu.png', name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
-          { id: 3, logo: '../src/components/icons/wechat.png', name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
-          { id: 4, logo: '../src/components/icons/weibo.png', name: "微博文案", more: '这是这个卡片的介绍', prompt: '../prompt/001/weibo.txt' },
-          { id: 5, logo: '../src/components/icons/douyin.png', name: "抖音脚本", more: '这是这个卡片的介绍', prompt: '../prompt/douyin.txt' },
+          { id: 1, logo: '../components/icons/jizhe.png', name: "新闻记者", more: '以记者的身份写报道', prompt: '../prompt/001/xinwenjizhe.txt' },
+          { id: 2, logo: '../components/icons/xiaohongshu.png', name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
+          { id: 3, logo: '../components/icons/wechat.png', name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
+          { id: 4, logo: '../components/icons/weibo.png', name: "微博文案", more: '这是这个卡片的介绍', prompt: '../prompt/001/weibo.txt' },
+          { id: 5, logo: '../components/icons/douyin.png', name: "抖音脚本", more: '这是这个卡片的介绍', prompt: '../prompt/douyin.txt' },
         ],
         // 职场办公
         [
-          { id: 1, logo: '../src/components/icons/biganzi.png', name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
-          { id: 2, logo: '../src/components/icons/fanyi.png', name: "翻译器", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
-          { id: 3, logo: '../src/components/icons/ppt.png', name: "PPT助手", more: '让你的PPT既有Power，又有Point', prompt: '../prompt/002/ppt.txt' },
+          { id: 1, logo: '../components/icons/biganzi.png', name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
+          { id: 2, logo: '../components/icons/fanyi.png', name: "翻译器", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
+          { id: 3, logo: '../components/icons/ppt.png', name: "PPT助手", more: '让你的PPT既有Power，又有Point', prompt: '../prompt/002/ppt.txt' },
         ],
         // 学习助手
         [
