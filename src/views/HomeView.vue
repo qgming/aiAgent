@@ -25,8 +25,8 @@
           <div class="anyCard">
             <div class="toolCard" @click="openTools(tool)" v-for="tool in getToolCards(index + 1)" :key="tool.id">
               <div class="logoBox">
-                <!-- <img class="toolLogo" :src=getImageUrl(tool.logo) alt=""> -->
-                <img class="toolLogo" :src="tool.logo" alt="">
+                <img class="toolLogo" :src=getImageUrl(tool.logo) alt="">
+                <!-- <img class="toolLogo" :src="tool.logo" alt=""> -->
               </div>
               <div class="cardText">
                 <p class="cardName">{{ tool.name }}</p>
@@ -57,10 +57,10 @@ export default {
       toolCards: [
         // 编辑精选
         [
-          { id: 1, logo: "@/assets/images/biganzi.png", name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
-          { id: 4, logo: "@/assets/images/wechat.png", name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
-          { id: 2, logo: "@/assets/images/ai.png", name: "翻译器", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
-          { id: 3, logo: "@/assets/images/xiaohongshu.png", name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
+          { id: 1, logo: "../assets/images/biganzi.png", name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
+          { id: 4, logo: "../assets/images/wechat.png", name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
+          { id: 2, logo: "../assets/images/ai.png", name: "翻译器", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
+          { id: 3, logo: "../assets/images/xiaohongshu.png", name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
 
         ],
         // 新媒体
@@ -80,8 +80,8 @@ export default {
         // 学习助手
         [
           { id: 1, logo: '../assets/images/xielunwen.png', name: "论文写作助手", more: '像教授一样写论文', prompt: '../prompt/003/lunwenxiezuo.txt' },
-          { id: 2, logo: '../src/components/icons/gailunwen.png', name: "论文改写", more: '文章降重，降低AI率', prompt: '../prompt/003/lunwengaixie.txt' },
-          { id: 3, logo: '../src/components/icons/feiman.png', name: "费曼学习法", more: '像费曼一样学习', prompt: '../prompt/003/feiman.txt' },
+          { id: 2, logo: '../assets/images/gailunwen.png', name: "论文改写", more: '文章降重，降低AI率', prompt: '../prompt/003/lunwengaixie.txt' },
+          { id: 3, logo: '../assets/images/feiman.png', name: "费曼学习法", more: '像费曼一样学习', prompt: '../prompt/003/feiman.txt' },
         ],
         // 生活娱乐
         [
@@ -100,7 +100,9 @@ export default {
   },
   methods: {
     getImageUrl(path) {
-      return new URL(path, import.meta.url).href;
+      console.log(new URL(path, import.meta.url).pathname);
+      // console.log(new URL(path, import.meta.url).href);
+      return new URL(path, import.meta.url).pathname;
     },
     getToolCards(categoryIndex) {
       return this.toolCards[categoryIndex - 1] || [];
