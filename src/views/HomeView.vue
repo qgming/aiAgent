@@ -26,6 +26,7 @@
             <div class="toolCard" @click="openTools(tool)" v-for="tool in getToolCards(index + 1)" :key="tool.id">
               <div class="logoBox">
                 <img class="toolLogo" :src="getImageUrl(tool.logo)" alt="">
+                <p>{{ getImageUrl(tool.logo) }}</p>
               </div>
               <div class="cardText">
                 <p class="cardName">{{ tool.name }}</p>
