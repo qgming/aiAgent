@@ -99,8 +99,8 @@ export default {
   },
   methods: {
     getImageUrl(path) {
-      return require(path);
-      // return new URL(path, import.meta.url).href;
+      // return require(path);
+      return new URL(path, import.meta.url).href;
     },
     getToolCards(categoryIndex) {
       return this.toolCards[categoryIndex - 1] || [];
