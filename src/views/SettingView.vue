@@ -275,15 +275,15 @@ export default {
 
 @media screen and (max-width: 768px) {
   .topSetting {
-    width: 400px;
+    width: 360px;
   }
 
   .settingOption {
-    width: 400px;
+    width: 360px;
   }
 
   .input {
-    width: 400px;
+    width: 360px;
   }
 }
 </style>

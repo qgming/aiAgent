@@ -283,20 +283,28 @@ li {
   }
 
   .anyCard {
-    width: 400px;
+    width: 360px;
   }
 
   .toolCard {
-    width: 190px;
+    width: 170px;
     height: 80px;
     margin: 5px;
     padding: 8px 4px;
   }
 
   .cardText {
-    width: 150px;
+    width: 140px;
     margin-left: 5px;
   }
+
+  .cardName {
+    font-weight: 500;
+    overflow: hidden;
+    max-height: 30px;
+    text-overflow: ellipsis;
+  }
+
 
 }
 </style>

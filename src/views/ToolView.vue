@@ -406,16 +406,16 @@ export default {
 
 @media screen and (max-width: 768px) {
   .topTool {
-    width: 400px;
+    width: 360px;
   }
 
   .inputText {
-    width: 360px;
+    width: 330px;
     height: 130px;
   }
 
   .outputBox {
-    width: 400PX;
+    width: 360PX;
     padding: 5px;
   }
 }
