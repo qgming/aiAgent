@@ -76,6 +76,7 @@ export default {
           { id: 2, logo: '../images/fanyi.png', name: "翻译器", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
           { id: 3, logo: '../images/ppt.png', name: "PPT助手", more: '让你的PPT既有Power，又有Point', prompt: '../prompt/002/ppt.txt' },
           { id: 4, logo: '../images/zhoubao.png', name: "周报生成器", more: '根据日常工作内容，提取要点并适当扩充，以生成周报。', prompt: '../prompt/002/zhoubao.txt' },
+          { id: 2, logo: '../images/fanyi.png', name: "翻译器2", more: '测试提示词', prompt: '../prompt/002/fanyi2.txt' },
         ],
         // 学习助手
         [
