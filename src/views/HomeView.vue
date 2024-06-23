@@ -92,7 +92,7 @@ export default {
         ],
         // 实验室
         [
-          { id: 1, logo: '../images/ai.png', name: "新闻记者", more: '这是这个卡片的介绍', prompt: '../prompt/xinwenjizhe.txt' },
+          { id: 1, logo: '../images/ppt.png', name: "提示词专家", more: '根据你的要求，提示词专家帮你生成提示词。', prompt: '../prompt/005/prompt.txt' },
           { id: 2, logo: '../images/ai.png', name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/xiaohongshu.txt' },
           { id: 3, logo: '../images/ai.png', name: "公众号文章", more: '写作助理', prompt: '../prompt/xiezuozhuli.txt' },
         ],
