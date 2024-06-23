@@ -80,6 +80,7 @@ export default {
         [
           { id: 1, logo: '../images/xielunwen.png', name: "论文写作助手", more: '像教授一样写论文', prompt: '../prompt/003/lunwenxiezuo.txt' },
           { id: 2, logo: '../images/gailunwen.png', name: "论文改写", more: '文章降重，降低AI率', prompt: '../prompt/003/lunwengaixie.txt' },
+          { id: 3, logo: '../images/feiman.png', name: "学习任何东西", more: '帮你学习任何东西', prompt: '../prompt/003/xuexirenhe.txt' },
           { id: 3, logo: '../images/feiman.png', name: "费曼学习法", more: '像费曼一样学习', prompt: '../prompt/003/feiman.txt' },
         ],
         // 生活娱乐
