@@ -75,13 +75,13 @@ export default {
           { id: 1, logo: '../images/biganzi.png', name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
           { id: 2, logo: '../images/fanyi.png', name: "翻译器", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
           { id: 3, logo: '../images/ppt.png', name: "PPT助手", more: '让你的PPT既有Power，又有Point', prompt: '../prompt/002/ppt.txt' },
-          { id: 4, logo: '../images/ppt.png', name: "周报生成器", more: '根据日常工作内容，提取要点并适当扩充，以生成周报。', prompt: '../prompt/002/zhoubao.txt' },
+          { id: 4, logo: '../images/zhoubao.png', name: "周报生成器", more: '根据日常工作内容，提取要点并适当扩充，以生成周报。', prompt: '../prompt/002/zhoubao.txt' },
         ],
         // 学习助手
         [
           { id: 1, logo: '../images/xielunwen.png', name: "论文写作助手", more: '像教授一样写论文', prompt: '../prompt/003/lunwenxiezuo.txt' },
           { id: 2, logo: '../images/gailunwen.png', name: "论文改写", more: '文章降重，降低AI率', prompt: '../prompt/003/lunwengaixie.txt' },
-          { id: 3, logo: '../images/feiman.png', name: "学习任何东西", more: '帮你学习任何东西', prompt: '../prompt/003/xuexirenhe.txt' },
+          { id: 3, logo: '../images/zhoubao.png', name: "学习任何东西", more: '帮你学习任何东西', prompt: '../prompt/003/xuexirenhe.txt' },
           { id: 3, logo: '../images/feiman.png', name: "费曼学习法", more: '像费曼一样学习', prompt: '../prompt/003/feiman.txt' },
         ],
         // 生活娱乐
