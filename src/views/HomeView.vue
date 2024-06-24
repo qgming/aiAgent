@@ -94,7 +94,7 @@ export default {
         // 实验室
         [
           { id: 1, logo: '../images/ppt.png', name: "提示词专家", more: '根据你的要求，提示词专家帮你生成提示词。', prompt: '../prompt/005/prompt.txt' },
-          { id: 2, logo: '../images/ai.png', name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/xiaohongshu.txt' },
+          { id: 2, logo: '../images/ai.png', name: "艾尔登法环高手", more: '艾尔登法环高手', prompt: '../prompt/005/aierdeng.txt' },
           { id: 3, logo: '../images/ai.png', name: "公众号文章", more: '写作助理', prompt: '../prompt/xiezuozhuli.txt' },
         ],
       ],
