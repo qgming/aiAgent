@@ -58,7 +58,7 @@ export default {
         [
           { id: 1, logo: "../images/biganzi.png", name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
           { id: 4, logo: "../images/wechat.png", name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
-          { id: 2, logo: "../images/fanyi.png", name: "翻译器", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
+          { id: 5, logo: '../images/fanyi.png', name: "翻译专家", more: '精通多国语言，使用方法：输入需要翻译的内容，并在末尾加（翻译成日语）来使用', prompt: '../prompt/002/fanyi2.txt' },
           { id: 3, logo: "../images/xiaohongshu.png", name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
 
         ],
@@ -73,10 +73,10 @@ export default {
         // 职场办公
         [
           { id: 1, logo: '../images/biganzi.png', name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
-          { id: 2, logo: '../images/fanyi.png', name: "翻译器", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
+          { id: 2, logo: '../images/fanyi.png', name: "中英互译", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
           { id: 3, logo: '../images/ppt.png', name: "PPT助手", more: '让你的PPT既有Power，又有Point', prompt: '../prompt/002/ppt.txt' },
           { id: 4, logo: '../images/zhoubao.png', name: "周报生成器", more: '根据日常工作内容，提取要点并适当扩充，以生成周报。', prompt: '../prompt/002/zhoubao.txt' },
-          { id: 2, logo: '../images/fanyi.png', name: "测试翻译器", more: '测试', prompt: '../prompt/002/fanyi2.txt' },
+          { id: 5, logo: '../images/fanyi.png', name: "翻译专家", more: '输入需要翻译的内容，并在末尾加（翻译成日语）来使用', prompt: '../prompt/002/fanyi2.txt' },
         ],
         // 学习助手
         [
