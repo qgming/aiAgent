@@ -4,7 +4,7 @@
       <RouterLink class="backHome" to="/">返回首页</RouterLink>
       <div class="aboutName">关于</div>
       <p>极点智能体0.1.5</p>
-      <p>提示词测试 1</p>
+      <p>提示词测试2</p>
     </div>
   </div>
 </template>
