@@ -3,7 +3,7 @@
     <img class="logo" src="../assets/images/ai.png" alt="">
     <ol class="headerOl">
       <li>
-        <RouterLink class="upVip" to="/setting">升级会员</RouterLink>
+        <RouterLink class="upVip" to="/setting">高级功能</RouterLink>
       </li>
       <li class="upVip" @click="toggleDiv">联系我们 </li>
       <img v-if="isDivVisible" class="callme" src="../assets/images/wxgzh.png" alt="">
