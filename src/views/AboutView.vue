@@ -3,8 +3,13 @@
     <div class="topAbout">
       <RouterLink class="backHome" to="/">返回首页</RouterLink>
       <div class="aboutName">关于</div>
-      <p>极点智能体0.1.6</p>
-      <p>提示词测试4</p>
+      <div class="aboutTop">
+        <img class="aboutLogo" src="../assets/images/ai.png" alt="logo" srcset="">
+        <p class="aboutName">极点智能体</p>
+        <p class="version">V0.1.7</p>
+        <p class="aboutBottom">©️极点维度<br>Polar Dimension</p>
+      </div>
+
     </div>
   </div>
 </template>
@@ -44,6 +49,37 @@
 .aboutName {
   font-size: 30px;
   font-weight: 600;
+}
+
+.aboutTop {
+  width: 600px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  border: 1px solid #eaeaea;
+  /* border: 1px solid rgb(135, 206, 235); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutLogo {
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+  border-radius: 12px;
+}
+
+.version {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(135, 206, 235);
+}
+
+.aboutBottom {
+  margin-top: 50px;
+  text-align: center;
 }
 
 
