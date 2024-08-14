@@ -51,6 +51,7 @@ export default {
         { id: '职场办公', name: '职场办公' },
         { id: '学习助手', name: '学习助手' },
         { id: '生活娱乐', name: '生活娱乐' },
+        { id: '极客', name: '极客' },
         { id: '实验室', name: '实验室' },
       ],
       toolCards: [
@@ -91,12 +92,15 @@ export default {
           { id: 2, logo: '../images/xiaohongshu.png', name: "婚姻法专家", more: '婚姻法专家', prompt: '../prompt/004/huiyinfa.txt' },
           { id: 3, logo: '../images/taluo.png', name: "塔罗牌", more: '来玩塔罗牌', prompt: '../prompt/004/taluo.txt' },
         ],
-        // 实验室
+        // 极客
         [
           { id: 1, logo: '../images/ppt.png', name: "提示词专家", more: '根据你的要求，提示词专家帮你生成提示词。', prompt: '../prompt/005/prompt.txt' },
           { id: 2, logo: '../images/aixin.png', name: "一线故事", more: '写作助理', prompt: '../prompt/005/yixiangushi.txt' },
-          { id: 3, logo: '../images/ai.png', name: "提示词测试", more: '写出问题得到答案！重要：直接在原内容下换行输入新内容即可，不要删除原内容', prompt: '../prompt/005/aierdeng.txt' },
-          { id: 4, logo: '../images/ai.png', name: "提示词测试", more: '用来测试未上线的提示词', prompt: '../prompt/005/test.txt' },
+        ],
+        // 实验室
+        [
+          { id: 1, logo: '../images/ai.png', name: "测试-意林", more: '测试1', prompt: '../prompt/006/test2.txt' },
+          { id: 2, logo: '../images/ai.png', name: "测试2", more: '用来测试未上线的提示词', prompt: '../prompt/006/test.txt' },
         ],
       ],
     };
