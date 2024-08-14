@@ -96,6 +96,7 @@ export default {
         // 极客
         [
           { id: 1, logo: '../images/ppt.png', name: "提示词专家", more: '根据你的要求，提示词专家帮你生成提示词。', prompt: '../prompt/005/prompt.txt' },
+          { id: 2, logo: '../images/ai.png', name: "空白智能体", more: '无提示词', prompt: '' },
 
         ],
         // 实验室
