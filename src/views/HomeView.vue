@@ -78,6 +78,7 @@ export default {
           { id: 3, logo: '../images/ppt.png', name: "PPT助手", more: '让你的PPT既有Power，又有Point', prompt: '../prompt/002/ppt.txt' },
           { id: 4, logo: '../images/zhoubao.png', name: "周报生成器", more: '根据日常工作内容，提取要点并适当扩充，以生成周报。', prompt: '../prompt/002/zhoubao.txt' },
           { id: 5, logo: '../images/fanyi.png', name: "翻译专家", more: '输入需要翻译的内容，并在末尾加（翻译成日语）来使用', prompt: '../prompt/002/fanyi2.txt' },
+          { id: 6, logo: '../images/aixin.png', name: "一线故事", more: '暖心一线故事', prompt: '../prompt/002/yixiangushi.txt' },
         ],
         // 学习助手
         [
@@ -95,7 +96,7 @@ export default {
         // 极客
         [
           { id: 1, logo: '../images/ppt.png', name: "提示词专家", more: '根据你的要求，提示词专家帮你生成提示词。', prompt: '../prompt/005/prompt.txt' },
-          { id: 2, logo: '../images/aixin.png', name: "一线故事", more: '写作助理', prompt: '../prompt/005/yixiangushi.txt' },
+
         ],
         // 实验室
         [
