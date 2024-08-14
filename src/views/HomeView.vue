@@ -94,7 +94,7 @@ export default {
         // 实验室
         [
           { id: 1, logo: '../images/ppt.png', name: "提示词专家", more: '根据你的要求，提示词专家帮你生成提示词。', prompt: '../prompt/005/prompt.txt' },
-          { id: 2, logo: '../images/ai.png', name: "一线故事", more: '写作助理', prompt: '../prompt/005/yixiangushi.txt' },
+          { id: 2, logo: '../images/aixin.png', name: "一线故事", more: '写作助理', prompt: '../prompt/005/yixiangushi.txt' },
           { id: 3, logo: '../images/ai.png', name: "提示词测试", more: '写出问题得到答案！重要：直接在原内容下换行输入新内容即可，不要删除原内容', prompt: '../prompt/005/aierdeng.txt' },
           { id: 4, logo: '../images/ai.png', name: "提示词测试", more: '用来测试未上线的提示词', prompt: '../prompt/005/test.txt' },
         ],
