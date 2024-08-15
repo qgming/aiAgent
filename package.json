@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.12",
     "axios": "^1.7.2",
     "element-plus": "^2.7.5",
     "md-editor-v3": "^4.16.7",
