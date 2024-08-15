@@ -6,7 +6,7 @@
       <div class="aboutTop">
         <img class="aboutLogo" src="../assets/images/ai.png" alt="logo" srcset="">
         <p class="aboutName">极点智能体</p>
-        <p class="version">V0.1.9</p>
+        <p class="version">V0.2.0</p>
         <p class="aboutBottom">©️极点维度<br>Polar Dimension</p>
       </div>
 
