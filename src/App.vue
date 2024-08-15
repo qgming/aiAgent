@@ -11,6 +11,7 @@ import { SpeedInsights } from "@vercel/speed-insights/vue"
   <div class="main">
     <RouterView />
   </div>
+  <SpeedInsights />
 
   <!-- <nav>
     <RouterLink to="/">Home</RouterLink>
