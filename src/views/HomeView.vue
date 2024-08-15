@@ -58,6 +58,7 @@ export default {
         // 编辑精选
         [
           { id: 1, logo: "../images/biganzi.png", name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
+          { id: 1, logo: '../images/artist.png', name: "绘画大师", more: '根据你的要求，绘画大师帮你生成适合文生图模型的“咒语”。', prompt: '../prompt/005/drawprompt.txt' },
           { id: 4, logo: "../images/wechat.png", name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
           { id: 5, logo: '../images/fanyi.png', name: "翻译专家", more: '精通多国语言，使用方法：输入需要翻译的内容，并在末尾加（翻译成日语）来使用', prompt: '../prompt/002/fanyi2.txt' },
           { id: 3, logo: "../images/xiaohongshu.png", name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
@@ -69,7 +70,7 @@ export default {
           { id: 2, logo: '../images/xiaohongshu.png', name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
           { id: 3, logo: '../images/wechat.png', name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
           { id: 4, logo: '../images/weibo.png', name: "微博文案", more: '这是这个卡片的介绍', prompt: '../prompt/001/weibo.txt' },
-          { id: 5, logo: '../images/douyin.png', name: "抖音脚本", more: '这是这个卡片的介绍', prompt: '../prompt/douyin.txt' },
+          { id: 5, logo: '../images/douyin.png', name: "抖音脚本", more: '这是这个卡片的介绍', prompt: '../prompt/001/xiezuozhuli.txt' },
         ],
         // 职场办公
         [
@@ -82,7 +83,7 @@ export default {
         ],
         // 学习助手
         [
-          { id: 1, logo: '../images/xielunwen.png', name: "论文写作助手", more: '像教授一样写论文', prompt: '../prompt/003/lunwenxiezuo.txt' },
+          { id: 1, logo: '../images/xielunwen.png', name: "论文助写", more: '像教授一样写论文', prompt: '../prompt/003/lunwenxiezuo.txt' },
           { id: 2, logo: '../images/gailunwen.png', name: "论文改写", more: '文章降重，降低AI率', prompt: '../prompt/003/lunwengaixie.txt' },
           { id: 3, logo: '../images/zhoubao.png', name: "学习任何东西", more: '帮你学习任何东西', prompt: '../prompt/003/xuexirenhe.txt' },
           { id: 3, logo: '../images/feiman.png', name: "费曼学习法", more: '像费曼一样学习', prompt: '../prompt/003/feiman.txt' },
@@ -96,8 +97,8 @@ export default {
         // 极客
         [
           { id: 1, logo: '../images/ppt.png', name: "提示词专家", more: '根据你的要求，提示词专家帮你生成提示词。', prompt: '../prompt/005/prompt.txt' },
-          { id: 1, logo: '../images/ppt.png', name: "作词家", more: '根据你的要求，作词家帮你生成适合Suno AI的歌词。', prompt: '../prompt/005/sunoai.txt' },
-          { id: 1, logo: '../images/ppt.png', name: "绘画大师", more: '根据你的要求，绘画大师帮你生成适合文生图模型的“咒语”。', prompt: '../prompt/005/drawprompt.txt' },
+          { id: 1, logo: '../images/song.png', name: "作词家", more: '根据你的要求，作词家帮你生成适合Suno AI的歌词。', prompt: '../prompt/005/sunoai.txt' },
+          { id: 1, logo: '../images/artist.png', name: "绘画大师", more: '根据你的要求，绘画大师帮你生成适合文生图模型的“咒语”。', prompt: '../prompt/005/drawprompt.txt' },
           { id: 2, logo: '../images/ai.png', name: "空白智能体", more: '无提示词', prompt: '' },
 
         ],
