@@ -59,7 +59,7 @@ export default {
         [
           { id: 1, logo: "../images/biganzi.png", name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
           { id: 1, logo: '../images/artist.png', name: "绘画大师", more: '根据你的要求，绘画大师帮你生成适合文生图模型的“咒语”。', prompt: '../prompt/005/drawprompt.txt' },
-          { id: 4, logo: "../images/wechat.png", name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
+          { id: 4, logo: "../images/wechat.png", name: "公众号文章", more: '公众号写作助理，侧重于产品分享文章', prompt: '../prompt/001/gongzhonghao.txt' },
           { id: 5, logo: '../images/fanyi.png', name: "翻译专家", more: '精通多国语言，使用方法：输入需要翻译的内容，并在末尾加（翻译成日语）来使用', prompt: '../prompt/002/fanyi2.txt' },
           { id: 3, logo: "../images/xiaohongshu.png", name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
 
@@ -68,7 +68,7 @@ export default {
         [
           { id: 1, logo: '../images/jizhe.png', name: "新闻记者", more: '以记者的身份写报道', prompt: '../prompt/001/xinwenjizhe.txt' },
           { id: 2, logo: '../images/xiaohongshu.png', name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
-          { id: 3, logo: '../images/wechat.png', name: "公众号文章", more: '公众号写作助理', prompt: '../prompt/001/gongzhonghao.txt' },
+          { id: 3, logo: '../images/wechat.png', name: "公众号文章", more: '公众号写作助理，侧重用产品分享文章', prompt: '../prompt/001/gongzhonghao.txt' },
           { id: 4, logo: '../images/weibo.png', name: "微博文案", more: '这是这个卡片的介绍', prompt: '../prompt/001/weibo.txt' },
           { id: 5, logo: '../images/douyin.png', name: "抖音脚本", more: '这是这个卡片的介绍', prompt: '../prompt/001/xiezuozhuli.txt' },
         ],
