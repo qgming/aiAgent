@@ -8,6 +8,7 @@
         <p class="aboutName">极点智能体</p>
         <p class="version">V0.2.1</p>
         <p class="aboutBottom">©️极点维度<br>Polar Dimension</p>
+        <p class="version">测试编码V1</p>
       </div>
 
     </div>

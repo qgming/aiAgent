@@ -104,8 +104,8 @@ export default {
         ],
         // 实验室
         [
-          { id: 1, logo: '../images/ai.png', name: "测试-意林", more: '测试1', prompt: '../prompt/006/test2.txt' },
-          { id: 2, logo: '../images/ai.png', name: "测试2", more: '用来测试未上线的提示词', prompt: '../prompt/006/test.txt' },
+          { id: 1, logo: '../images/ai.png', name: "测试1", more: '测试1', prompt: '../prompt/006/test.txt' },
+          { id: 2, logo: '../images/ai.png', name: "测试2", more: '用来测试未上线的提示词', prompt: '../prompt/006/test2.txt' },
         ],
       ],
     };
