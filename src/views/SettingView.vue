@@ -97,7 +97,7 @@ export default {
     this.vipSwitch = localStorage.getItem("vipSwitch") === 'true';
     // localStorage.setItem("apiSwitch", this.apiSwitch);
     this.inputKey = localStorage.getItem("userKey") || '';
-    this.inputUrl = localStorage.getItem("userUrl") || '';
+    this.inputUrl = localStorage.getItem("userUrl") || 'https://api.openai.com/v1/chat/completions';
     this.inputModel = localStorage.getItem("userModel") || 'gpt-3.5-turbo';
   },
   watch: {

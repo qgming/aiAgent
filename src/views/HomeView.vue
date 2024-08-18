@@ -70,7 +70,7 @@ export default {
           { id: 2, logo: '../images/xiaohongshu.png', name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
           { id: 3, logo: '../images/wechat.png', name: "公众号文章", more: '公众号写作助理，侧重用产品分享文章', prompt: '../prompt/001/gongzhonghao.txt' },
           { id: 4, logo: '../images/weibo.png', name: "微博文案", more: '这是这个卡片的介绍', prompt: '../prompt/001/weibo.txt' },
-          { id: 5, logo: '../images/douyin.png', name: "抖音脚本", more: '这是这个卡片的介绍', prompt: '../prompt/001/xiezuozhuli.txt' },
+          { id: 5, logo: '../images/douyin.png', name: "抖音脚本", more: '根据主题生成爆款短视频脚本', prompt: '../prompt/001/douyin.txt' },
         ],
         // 职场办公
         [
@@ -86,7 +86,8 @@ export default {
           { id: 1, logo: '../images/xielunwen.png', name: "论文助写", more: '像教授一样写论文', prompt: '../prompt/003/lunwenxiezuo.txt' },
           { id: 2, logo: '../images/gailunwen.png', name: "论文改写", more: '文章降重，降低AI率', prompt: '../prompt/003/lunwengaixie.txt' },
           { id: 3, logo: '../images/zhoubao.png', name: "学习任何东西", more: '帮你学习任何东西', prompt: '../prompt/003/xuexirenhe.txt' },
-          { id: 3, logo: '../images/feiman.png', name: "费曼学习法", more: '像费曼一样学习', prompt: '../prompt/003/feiman.txt' },
+          { id: 4, logo: '../images/feiman.png', name: "费曼学习法", more: '像费曼一样学习', prompt: '../prompt/003/feiman.txt' },
+          { id: 5, logo: '../images/feiman.png', name: "深度思考", more: '多角度深度思考，发现问题，解决问题', prompt: '../prompt/003/sikao.txt' },
         ],
         // 生活娱乐
         [
