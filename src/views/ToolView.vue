@@ -8,13 +8,17 @@
 
     <div class="toolInput">
       <textarea v-model="inputText" class="inputText" placeholder="请输入"></textarea>
-      <div class="sendInput" @click="sendMessage(inputText)">生成<p class="sendCount" v-if="!isVip">({{ count }})</p>
+      <div class="inputBox">
+        <div class="sendOption" @click="sendChat" :style="divStyle"> 连续对话 </div>
+
+        <div class="sendInput" @click="sendMessage(inputText)">生成<p class="sendCount" v-if="!isVip">({{ count }})</p>
+        </div>
       </div>
     </div>
-    <div class="toolOutput" v-if="messages.content">
+    <div class="toolOutput" v-if="aiMessages.content">
       <div class="outputBox">
         <div class="copyOutput" @click="copyToClipboard">复制全部</div>
-        <MdPreview class="outputText" v-model="messages.content" />
+        <MdPreview class="outputText" v-model="aiMessages.content" />
         <p class="charCount">字符数量: {{ charCount }}</p>
         <p class="charCount">内容由AI生成，请注意甄别</p>
       </div>
@@ -42,19 +46,21 @@ export default {
       MODEL_NAME: 'deepseek-chat',
 
       // 历史消息，存储用户和AI的对话记录
-      messages: [],
+      allMessages: [{ role: 'system', content: '' }],
+      // allMessages: [],
       // 显示内容，存储AI的回复
-      aiOutput: [],
+      aiMessages: [],
+
       // 等待状态，防止用户重复发送请求
       waiting: false,
 
-      Output: '',
-      inputText: '',
+      inputText: '',//用户输入内容
       localTool: '',// 定义一个本地变量来存储 Vuex 的值
-      prompt: '',
+      prompt: '', //提示词
       //生成次数
       count: '10',
-      isVip: false, // 新增一个数据属性来表示是否为VIP
+      isVip: false, // 展示VIP效果
+      sendOption: false, //连续对话是否开启
     };
   },
   watch: {
@@ -66,14 +72,21 @@ export default {
   computed: {
     //统计字符数
     charCount() {
-      return this.messages.content.length;
+      return this.aiMessages.content.length;
+    },
+    divStyle() {
+      return {
+        backgroundColor: this.sendOption ? '#87ceea' : 'white',
+        color: this.sendOption ? 'white' : 'black',
+      };
     }
+
   },
   methods: {
     //复制全部
     async copyToClipboard() {
       try {
-        await navigator.clipboard.writeText(this.messages.content);
+        await navigator.clipboard.writeText(this.aiMessages.content);
         this.openSuccess('复制成功！')
       } catch (err) {
         console.error('无法复制文本：', err);
@@ -158,6 +171,7 @@ export default {
       localStorage.setItem('generationCount', this.count);
       localStorage.setItem('generationDate', new Date().toDateString());
     },
+
     // 从本地存储读取生成次数
     loadCountFromLocalStorage() {
       const savedCount = localStorage.getItem('generationCount');
@@ -175,16 +189,34 @@ export default {
         this.saveCountToLocalStorage();
       }
     },
+
     // 检查并重置生成次数
     checkAndResetCount() {
       this.loadCountFromLocalStorage();
     },
 
-    //发送消息
-    async sendMessage(inputText) {
-      const vipSwitch = localStorage.getItem('vipSwitch');
+    //设置连续对话
+    sendChat() {
+      if (this.sendOption == true) {
+        this.sendOption = false
+        this.openSuccess('连续对话已关闭')
+      } else {
+        this.sendOption = true
+        this.openSuccess('连续对话已开启')
+      }
+    },
 
+    //刷新页面
+    refreshPage() {
+      location.reload();
+    },
+
+    //发送消息!!!!
+    async sendMessage(inputText) {
+      //检查是否开启VIP及检查剩余次数
+      const vipSwitch = localStorage.getItem('vipSwitch');
       // 如果 vipSwitch 存在且值为 true，则不执行关于 count 次数的函数
+
       if (vipSwitch && vipSwitch === 'true') {
         // 直接发送消息，不检查或修改 count
       } else {
@@ -196,40 +228,79 @@ export default {
           this.count = 10;
           this.saveCountToLocalStorage();
         }
-
         if (this.count <= 0) {
           this.openWarning('今日生成次数已用完，请明天再来！');
           return;
         }
-
         this.count = this.count - 1;
         this.saveCountToLocalStorage();
       }
 
-      //---------------
-
+      //检查是否有对话进行中
       if (this.waiting) return;
       this.waiting = true;
 
-      const userMessage = [
-        { role: 'system', content: this.prompt },
-        { role: 'user', content: inputText },
-      ];
+      // this.allMessages = [{ role: 'system', content: this.prompt }]
+      //判断是否开启连续对话
+      if (this.sendOption) {
+        //连续对话模式
+        //添加用户消息
+        console.log(this.allMessages);
 
-      this.messages = [];
-      for await (const message of this.getGPT(userMessage)) {
-        // console.log(message.content);
-        // 将新消息内容追加到消息列表中
-        if (this.messages.content) {
-          this.messages.content += message.content; // 添加换行符以分隔消息
+        this.allMessages[0] = { role: 'system', content: this.prompt }
+        this.allMessages.push({ role: 'user', content: inputText })
+
+        this.aiMessages = [];
+
+        for await (const message of this.getGPT(this.allMessages)) {
+          // console.log(message);
+          // 将新消息内容追加到消息列表中
+          if (this.aiMessages.content) {
+            this.aiMessages.content += message.content; // 添加换行符以分隔消息
+          }
+          else {
+            this.aiMessages = {
+              role: message.role, content: message.content
+            }
+            // this.messages.role = message.role
+            // this.messages.content = message.content;
+          }
         }
-        else {
-          this.messages.content = message.content;
+        this.waiting = false;
+
+        //把AI回复添加到历史消息
+        this.allMessages.push(this.aiMessages)
+
+        // console.log(this.allMessages);
+
+      } else {
+
+        //一次性对话模式
+        //定义一个一次性消息数组
+        const userMessage = [
+          { role: 'system', content: this.prompt },
+          { role: 'user', content: inputText },
+        ];
+
+        this.aiMessages = [];
+
+        for await (const message of this.getGPT(userMessage)) {
+          // console.log(message);
+          // 将新消息内容追加到消息列表中
+          if (this.aiMessages.content) {
+            this.aiMessages.content += message.content; // 添加换行符以分隔消息
+          }
+          else {
+            this.aiMessages = {
+              role: message.role, content: message.content
+            }
+          }
         }
+        this.waiting = false;
       }
-      this.waiting = false;
-      // console.log(this.messages);
+
     },
+
     //读取本地Prompt
     async readPromptFile(prompt) {
       try {
@@ -346,12 +417,36 @@ export default {
   border-bottom: 1px solid #eaeaea;
 }
 
+.inputBox {
+  display: flex;
+}
+
+.sendOption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-right: 15px;
+  /* width: 100px; */
+  text-align: center;
+  text-decoration: none;
+  padding: 4px 10px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 9px;
+}
+
+.sendOption:hover {
+  border: 1px solid #d2d2d2;
+}
+
 .sendInput {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 15px;
-  width: 180px;
+  width: 160px;
   color: white;
   text-align: center;
   text-decoration: none;
