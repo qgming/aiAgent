@@ -87,8 +87,8 @@ export default {
           { id: 2, logo: '../images/gailunwen.png', name: "论文改写", more: '文章降重，降低AI率', prompt: '../prompt/003/lunwengaixie.txt' },
           { id: 3, logo: '../images/zhoubao.png', name: "学习任何东西", more: '帮你学习任何东西', prompt: '../prompt/003/xuexirenhe.txt' },
           { id: 4, logo: '../images/feiman.png', name: "费曼学习法", more: '像费曼一样学习', prompt: '../prompt/003/feiman.txt' },
-          { id: 5, logo: '../images/feiman.png', name: "深度思考", more: '多角度深度思考，发现问题，解决问题', prompt: '../prompt/003/sikao.txt' },
-          { id: 3, logo: '../images/zhoubao.png', name: "极点百科", more: '帮你了解任何东西', prompt: '../prompt/003/baike.txt' },
+          { id: 5, logo: '../images/think.png', name: "深度思考", more: '多角度深度思考，发现问题，解决问题', prompt: '../prompt/003/sikao.txt' },
+          { id: 3, logo: '../images/baike.png', name: "极点百科", more: '帮你了解任何东西', prompt: '../prompt/003/baike.txt' },
         ],
         // 生活娱乐004
         [
