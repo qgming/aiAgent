@@ -152,9 +152,14 @@ export default {
           // 检查消息是否以'data: '开头
           if (message.startsWith('data: ')) {
             const jsonMessage = JSON.parse(message.substring(5)); // 解析消息中的JSON数据
-            if (resultData.includes('[DONE]')) {
-              break; // 如果消息包含'[DONE]'，退出循环
+
+            if (jsonMessage.choices[0]?.finish_reason == 'stop') {
+              break; // 检测到stop停止
             }
+
+            // if (resultData.includes('[DONE]')) {
+            //   break; // 如果消息包含'[DONE]'，退出循环
+            // }
             const createdID = jsonMessage.created; // 获取消息的创建ID
             yield {
               content: jsonMessage.choices[0]?.delta?.content || ' ',

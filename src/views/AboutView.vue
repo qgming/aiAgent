@@ -6,10 +6,10 @@
       <div class="aboutTop">
         <img class="aboutLogo" src="../assets/images/ai.png" alt="logo" srcset="">
         <p class="aboutName">极点智能体</p>
-        <p class="version">V0.3.0</p>
+        <p class="version">V0.3.1</p>
         <p class="aboutEmail">📮qgming@qq.com</p>
         <p class="aboutBottom">©️极点维度<br>Polar Dimension</p>
-        <p style="font-size: 12px; color: gray;">测试编码V5</p>
+        <p style="font-size: 12px; color: gray;">测试编码V6</p>
       </div>
 
     </div>

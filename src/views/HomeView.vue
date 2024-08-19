@@ -64,7 +64,7 @@ export default {
           { id: 3, logo: "../images/xiaohongshu.png", name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
 
         ],
-        // 新媒体
+        // 新媒体001
         [
           { id: 1, logo: '../images/jizhe.png', name: "新闻记者", more: '以记者的身份写报道', prompt: '../prompt/001/xinwenjizhe.txt' },
           { id: 2, logo: '../images/xiaohongshu.png', name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
@@ -72,7 +72,7 @@ export default {
           { id: 4, logo: '../images/weibo.png', name: "微博文案", more: '这是这个卡片的介绍', prompt: '../prompt/001/weibo.txt' },
           { id: 5, logo: '../images/douyin.png', name: "抖音脚本", more: '根据主题生成爆款短视频脚本', prompt: '../prompt/001/douyin.txt' },
         ],
-        // 职场办公
+        // 职场办公002
         [
           { id: 1, logo: '../images/biganzi.png', name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
           { id: 2, logo: '../images/fanyi.png', name: "中英互译", more: '一键中英互译，直译意译，样样精通', prompt: '../prompt/002/fanyi.txt' },
@@ -81,21 +81,22 @@ export default {
           { id: 5, logo: '../images/fanyi.png', name: "翻译专家", more: '输入需要翻译的内容，并在末尾加（翻译成日语）来使用', prompt: '../prompt/002/fanyi2.txt' },
           { id: 6, logo: '../images/aixin.png', name: "一线故事", more: '暖心一线故事', prompt: '../prompt/002/yixiangushi.txt' },
         ],
-        // 学习助手
+        // 学习助手003
         [
           { id: 1, logo: '../images/xielunwen.png', name: "论文助写", more: '像教授一样写论文', prompt: '../prompt/003/lunwenxiezuo.txt' },
           { id: 2, logo: '../images/gailunwen.png', name: "论文改写", more: '文章降重，降低AI率', prompt: '../prompt/003/lunwengaixie.txt' },
           { id: 3, logo: '../images/zhoubao.png', name: "学习任何东西", more: '帮你学习任何东西', prompt: '../prompt/003/xuexirenhe.txt' },
           { id: 4, logo: '../images/feiman.png', name: "费曼学习法", more: '像费曼一样学习', prompt: '../prompt/003/feiman.txt' },
           { id: 5, logo: '../images/feiman.png', name: "深度思考", more: '多角度深度思考，发现问题，解决问题', prompt: '../prompt/003/sikao.txt' },
+          { id: 3, logo: '../images/zhoubao.png', name: "极点百科", more: '帮你了解任何东西', prompt: '../prompt/003/baike.txt' },
         ],
-        // 生活娱乐
+        // 生活娱乐004
         [
           { id: 1, logo: '../images/lvxing.png', name: "旅行规划师", more: '保姆级旅游规划师，衣食住行全包揽', prompt: '../prompt/004/lvxingguihua.txt' },
           { id: 2, logo: '../images/xiaohongshu.png', name: "婚姻法专家", more: '婚姻法专家', prompt: '../prompt/004/huiyinfa.txt' },
           { id: 3, logo: '../images/taluo.png', name: "塔罗牌", more: '来玩塔罗牌', prompt: '../prompt/004/taluo.txt' },
         ],
-        // 极客
+        // 极客005
         [
           { id: 1, logo: '../images/ppt.png', name: "提示词专家", more: '根据你的要求，提示词专家帮你生成提示词。', prompt: '../prompt/005/prompt.txt' },
           { id: 1, logo: '../images/song.png', name: "作词家", more: '根据你的要求，作词家帮你生成适合Suno AI的歌词。', prompt: '../prompt/005/sunoai.txt' },
@@ -103,7 +104,7 @@ export default {
           { id: 2, logo: '../images/ai.png', name: "空白智能体", more: '无提示词', prompt: '' },
 
         ],
-        // 实验室
+        // 实验室006
         [
           { id: 1, logo: '../images/ai.png', name: "测试1", more: '测试1', prompt: '../prompt/006/test.txt' },
           { id: 2, logo: '../images/ai.png', name: "测试2", more: '用来测试未上线的提示词', prompt: '../prompt/006/test2.txt' },
