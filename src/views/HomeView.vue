@@ -5,7 +5,7 @@
         <RouterLink class="toSetting" to="/setting">设置</RouterLink>
       </div>
       <div class="searchBox">
-        <img class="searchImg" src="../assets/images/ai.png" alt="">
+        <img class="searchImg" src="../assets/images/polarlogo2.png" alt="">
         <input type="text" class="searchInput">
       </div>
     </div>

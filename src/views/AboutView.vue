@@ -4,12 +4,12 @@
       <RouterLink class="backHome" to="/">返回首页</RouterLink>
       <div class="aboutName">关于</div>
       <div class="aboutTop">
-        <img class="aboutLogo" src="../assets/images/ai.png" alt="logo" srcset="">
+        <img class="aboutLogo" src="../assets/images/polarlogo.png" alt="logo" srcset="">
         <p class="aboutName">极点智能体</p>
         <p class="version">V0.3.2</p>
         <p class="aboutEmail">📮qgming@qq.com</p>
         <p class="aboutBottom">©️极点维度<br>Polar Dimension</p>
-        <p style="font-size: 12px; color: gray;">测试编码V8</p>
+        <p style="font-size: 12px; color: gray;">测试编码V9</p>
       </div>
 
     </div>
