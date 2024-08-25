@@ -105,7 +105,7 @@ export default {
           { id: 1, logo: '../images/ppt.png', name: "提示词专家", more: '根据你的要求，提示词专家帮你生成提示词。', prompt: '../prompt/005/prompt.txt' },
           { id: 1, logo: '../images/song.png', name: "作词家", more: '根据你的要求，作词家帮你生成适合Suno AI的歌词。', prompt: '../prompt/005/sunoai.txt' },
           { id: 1, logo: '../images/artist.png', name: "绘画大师", more: '根据你的要求，绘画大师帮你生成适合文生图模型的“咒语”。', prompt: '../prompt/005/drawprompt.txt' },
-          { id: 2, logo: '../images/ai.png', name: "空白智能体", more: '无提示词', prompt: '' },
+          { id: 2, logo: '../images/polarlogo.png', name: "空白智能体", more: '无提示词', prompt: '' },
 
         ],
         // 实验室006
