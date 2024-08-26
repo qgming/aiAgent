@@ -122,6 +122,7 @@ export default {
   width: 600px;
   display: flex;
   flex-direction: column;
+  user-select: none;
 }
 
 .backHome {
@@ -164,6 +165,7 @@ export default {
   align-items: center;
   padding: 10px;
   border-radius: 12px;
+  user-select: none;
 }
 
 .openVip img {
@@ -196,6 +198,7 @@ export default {
   border: 1px solid #ffc107;
   margin-bottom: 10px;
   padding: 10px;
+  user-select: none;
 }
 
 .vipName {

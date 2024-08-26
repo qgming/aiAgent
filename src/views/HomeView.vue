@@ -161,6 +161,7 @@ export default {
   color: black;
   text-decoration: none;
   border-radius: 9px;
+  user-select: none;
 }
 
 .toSetting:hover {

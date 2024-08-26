@@ -370,6 +370,7 @@ export default {
   width: 600px;
   display: flex;
   flex-direction: column;
+  user-select: none;
 }
 
 .backHome {
