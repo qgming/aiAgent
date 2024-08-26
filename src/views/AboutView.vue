@@ -9,7 +9,7 @@
         <p class="version">V0.3.3</p>
         <p class="aboutEmail">📮qgming@qq.com</p>
         <p class="aboutBottom">©️极点维度<br>Polar Dimension</p>
-        <p style="font-size: 12px; color: gray;">测试编码V12</p>
+        <p style="font-size: 12px; color: gray;">测试编码V13</p>
       </div>
 
     </div>
@@ -17,6 +17,7 @@
 </template>
 
 <script>
+
 </script>
 
 <style scoped>
