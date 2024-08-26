@@ -424,6 +424,7 @@ export default {
 
 .inputBox {
   display: flex;
+  user-select: none;
 }
 
 .sendOption {
@@ -493,6 +494,7 @@ export default {
   background-color: white;
   border: 1px solid #eaeaea;
   border-radius: 9px;
+  user-select: none;
 }
 
 .copyOutput:hover {

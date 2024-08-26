@@ -14,7 +14,8 @@
         <div class="pageLeft">
           <ol>
             <li v-for="(item, index) in sections" :key="index">
-              <a class="option" :href="'#' + item.id">{{ item.name }}</a>
+              <a class="option" :href="'#' + item.id" @click="setActiveSection(index)" :ref="'section' + index">{{
+                item.name }}</a>
             </li>
           </ol>
         </div>
@@ -58,7 +59,7 @@ export default {
         // 编辑精选
         [
           { id: 1, logo: "../images/biganzi.png", name: "公文笔杆子", more: '提升效率，驾驭文书之道', prompt: '../prompt/002/gongwen.txt' },
-          { id: 1, logo: '../images/artist.png', name: "绘画大师", more: '根据你的要求，绘画大师帮你生成适合文生图模型的“咒语”。', prompt: '../prompt/005/drawprompt.txt' },
+          { id: 1, logo: '../images/artist.png', name: "绘画大师", more: '根据你的要求，绘画大师帮你生成适合文生图模型的"咒语"。', prompt: '../prompt/005/drawprompt.txt' },
           { id: 4, logo: "../images/wechat.png", name: "公众号文章", more: '公众号写作助理，侧重于产品分享文章', prompt: '../prompt/001/gongzhonghao.txt' },
           { id: 5, logo: '../images/fanyi.png', name: "翻译专家", more: '精通多国语言，使用方法：输入需要翻译的内容，并在末尾加（翻译成日语）来使用', prompt: '../prompt/002/fanyi2.txt' },
           { id: 3, logo: "../images/xiaohongshu.png", name: "小红书生成器", more: '小红书爆款生成器', prompt: '../prompt/001/xiaohongshu.txt' },
@@ -104,7 +105,7 @@ export default {
         [
           { id: 1, logo: '../images/ppt.png', name: "提示词专家", more: '根据你的要求，提示词专家帮你生成提示词。', prompt: '../prompt/005/prompt.txt' },
           { id: 1, logo: '../images/song.png', name: "作词家", more: '根据你的要求，作词家帮你生成适合Suno AI的歌词。', prompt: '../prompt/005/sunoai.txt' },
-          { id: 1, logo: '../images/artist.png', name: "绘画大师", more: '根据你的要求，绘画大师帮你生成适合文生图模型的“咒语”。', prompt: '../prompt/005/drawprompt.txt' },
+          { id: 1, logo: '../images/artist.png', name: "绘画大师", more: '根据你的要求，绘画大师帮你生成适合文生图模型的"咒语"。', prompt: '../prompt/005/drawprompt.txt' },
           { id: 2, logo: '../images/polarlogo.png', name: "空白智能体", more: '无提示词', prompt: '' },
 
         ],
@@ -126,7 +127,7 @@ export default {
       this.$router.push({
         path: '/tool'
       });
-    }
+    },
   },
   mounted() {
 
@@ -219,14 +220,15 @@ li {
   font-size: larger;
   text-decoration: none;
   padding: 5px 10px;
+  user-select: none;
 }
 
 .option:hover {
   color: white;
   background-color: skyblue;
   border-radius: 9px;
+  transition: transform 300ms ease-out;
 }
-
 
 /* AI工具卡片 */
 .pageRight {
@@ -237,6 +239,7 @@ li {
   font-size: 20px;
   margin: 5px 0px;
   color: #b9b9b9;
+  user-select: none;
 }
 
 .anyCard {
@@ -255,13 +258,15 @@ li {
   border-radius: 12px;
   margin: 6px;
   padding: 16px 8px;
+  user-select: none;
 }
 
 .toolCard:hover {
   border: 1px solid rgb(135, 206, 235);
   box-shadow: rgba(135, 206, 235, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   color: skyblue;
-  transition: 250ms;
+  transition: transform 300ms ease-out;
+  /* 调整过渡时间和缓动函数 */
   transform: scale(1.03);
 }
 

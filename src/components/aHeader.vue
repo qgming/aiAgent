@@ -52,6 +52,8 @@ export default {
 
 .headerOl {
   display: flex;
+  user-select: none;
+  /* 禁止用户选择 */
 }
 
 .headerOl li {
