@@ -6,7 +6,7 @@
       <div class="aboutTop">
         <img class="aboutLogo" src="../assets/images/polarlogo.png" alt="logo" srcset="">
         <p class="aboutName">极点智能体</p>
-        <p class="version">V0.3.3</p>
+        <p class="version">V0.3.4</p>
         <p class="aboutEmail">📮qgming@qq.com</p>
         <p class="aboutBottom">©️极点维度<br>Polar Dimension</p>
         <p style="font-size: 12px; color: gray;">测试编码V13</p>

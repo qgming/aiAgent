@@ -72,6 +72,8 @@ export default {
           { id: 3, logo: '../images/wechat.png', name: "公众号文章", more: '公众号写作助理，侧重用产品分享文章', prompt: '../prompt/001/gongzhonghao.txt' },
           { id: 4, logo: '../images/weibo.png', name: "微博文案", more: '这是这个卡片的介绍', prompt: '../prompt/001/weibo.txt' },
           { id: 5, logo: '../images/douyin.png', name: "抖音脚本", more: '根据主题生成爆款短视频脚本', prompt: '../prompt/001/douyin.txt' },
+          { id: 6, logo: '../images/jizhe.png', name: "资讯自媒体", more: '一个根据新闻快速生成自媒体文章的AI', prompt: '../prompt/001/zimeiti.txt' },
+
         ],
         // 职场办公002
         [
