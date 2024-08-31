@@ -41,8 +41,8 @@ export default {
   data() {
     return {
       // API配置
-      // API_KEY: 'sk-931f3fd3e51443959a6b66d3b5d1c15a',
-      // ENDPOINT: 'https://api.deepseek.com/chat/completions',
+      // API_KEY: 'sk-b25aa5538da243bb8d60f704f9941a8b',
+      // ENDPOINT: 'https://api.deepseek.com/v1/chat/completions',
       // MODEL_NAME: 'deepseek-chat',
 
       // API配置2
