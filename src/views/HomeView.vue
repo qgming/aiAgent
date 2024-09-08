@@ -114,8 +114,8 @@ export default {
         // 实验室006
         [
           { id: 1, logo: '../images/polarlogo.png', name: "空白智能体", more: '无提示词', prompt: '' },
-          { id: 2, logo: '../images/ai.png', name: "测试1", more: '提示词测试1', prompt: '../prompt/006/test.txt' },
-          { id: 3, logo: '../images/ai.png', name: "测试2", more: '提示词测试2', prompt: '../prompt/006/test2.txt' },
+          { id: 2, logo: '../images/ai.png', name: "规则怪谈游戏", more: '提示词测试1', prompt: '../prompt/006/test.txt' },
+          { id: 3, logo: '../images/ai.png', name: "文明游戏", more: '提示词测试2', prompt: '../prompt/006/test2.txt' },
         ],
       ],
     };
