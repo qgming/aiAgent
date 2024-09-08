@@ -6,10 +6,10 @@
       <div class="aboutTop">
         <img class="aboutLogo" src="../assets/images/polarlogo.png" alt="logo" srcset="">
         <p class="webName">极点智能体<br>Extreme Ai Agent</p>
-        <p class="version">V0.3.5</p>
+        <p class="version">V0.3.5(19)</p>
         <p class="aboutEmail">📮qgming@qq.com</p>
         <p class="aboutBottom">©️极点维度<br>Extreme Dimension</p>
-        <p style="font-size: 12px; color: gray; text-align: center;">测试编码V18<br>由SiliconCloud提供大模型支持</p>
+        <p class="otherName">由<a href="https://siliconflow.cn/zh-cn/" target="_blank">硅基流动</a>提供默认大模型支持<br>通义千问（Qwen2-7B-Instruct）</p>
       </div>
 
     </div>
@@ -91,7 +91,7 @@
 .aboutEmail {
   margin-top: 50px;
   padding: 5px 10px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border: 1px solid #eaeaea;
   border-radius: 9px;
 }
@@ -99,6 +99,11 @@
 .aboutBottom {
   margin-top: 30px;
   text-align: center;
+}
+
+.otherName {
+  margin-top: 10px;
+  font-size: 12px;
 }
 
 
