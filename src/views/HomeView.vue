@@ -105,16 +105,17 @@ export default {
         ],
         // 极客005
         [
-          { id: 1, logo: '../images/ppt.png', name: "提示词专家", more: '根据你的要求，提示词专家帮你生成提示词。', prompt: '../prompt/005/prompt.txt' },
-          { id: 1, logo: '../images/song.png', name: "作词家", more: '根据你的要求，作词家帮你生成适合Suno AI的歌词。', prompt: '../prompt/005/sunoai.txt' },
-          { id: 1, logo: '../images/artist.png', name: "绘画大师", more: '根据你的要求，绘画大师帮你生成适合文生图模型的"咒语"。', prompt: '../prompt/005/drawprompt.txt' },
-          { id: 2, logo: '../images/polarlogo.png', name: "空白智能体", more: '无提示词', prompt: '' },
+          { id: 1, logo: '../images/ppt.png', name: "提示词工程师", more: '根据你的要求，提示词工程师帮你生成提示词。', prompt: '../prompt/005/prompt.txt' },
+          { id: 2, logo: '../images/song.png', name: "作词家", more: '根据你的要求，作词家帮你生成适合Suno AI的歌词。', prompt: '../prompt/005/sunoai.txt' },
+          { id: 3, logo: '../images/artist.png', name: "绘画大师", more: '根据你的要求，绘画大师帮你生成适合文生图模型的"咒语"。', prompt: '../prompt/005/drawprompt.txt' },
+          { id: 4, logo: '../images/ppt.png', name: "问题解决专家", more: '根据引导，逐步解决你的问题。', prompt: '../prompt/005/question.txt' },
 
         ],
         // 实验室006
         [
-          { id: 1, logo: '../images/ai.png', name: "测试1", more: '测试1', prompt: '../prompt/006/test.txt' },
-          { id: 2, logo: '../images/ai.png', name: "测试2", more: '用来测试未上线的提示词', prompt: '../prompt/006/test2.txt' },
+          { id: 1, logo: '../images/polarlogo.png', name: "空白智能体", more: '无提示词', prompt: '' },
+          { id: 2, logo: '../images/ai.png', name: "测试1", more: '提示词测试1', prompt: '../prompt/006/test.txt' },
+          { id: 3, logo: '../images/ai.png', name: "测试2", more: '提示词测试2', prompt: '../prompt/006/test2.txt' },
         ],
       ],
     };
@@ -240,7 +241,7 @@ li {
 
 .toolName {
   font-size: 20px;
-  margin: 5px 0px;
+  margin: 5px 0;
   color: #b9b9b9;
   user-select: none;
 }
@@ -266,7 +267,7 @@ li {
 
 .toolCard:hover {
   border: 1px solid rgb(135, 206, 235);
-  box-shadow: rgba(135, 206, 235, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(135, 206, 235, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
   color: skyblue;
   transition: transform 300ms ease-out;
   /* 调整过渡时间和缓动函数 */
@@ -308,7 +309,7 @@ li {
   }
 
   .pageRight {
-    margin: 0px;
+    margin: 0;
   }
 
   .anyCard {
