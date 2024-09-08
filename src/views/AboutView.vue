@@ -5,11 +5,11 @@
       <div class="aboutName">关于</div>
       <div class="aboutTop">
         <img class="aboutLogo" src="../assets/images/polarlogo.png" alt="logo" srcset="">
-        <p class="aboutName">极点智能体<br>Extreme Ai Agent</p>
+        <p class="webName">极点智能体<br>Extreme Ai Agent</p>
         <p class="version">V0.3.5</p>
         <p class="aboutEmail">📮qgming@qq.com</p>
-        <p class="aboutBottom">©️极点维度<br>Polar Dimension</p>
-        <p style="font-size: 12px; color: gray; text-align: center;">测试编码V17<br>由SiliconCloud提供大模型支持</p>
+        <p class="aboutBottom">©️极点维度<br>Extreme Dimension</p>
+        <p style="font-size: 12px; color: gray; text-align: center;">测试编码V18<br>由SiliconCloud提供大模型支持</p>
       </div>
 
     </div>
@@ -53,6 +53,13 @@
 .aboutName {
   font-size: 30px;
   font-weight: 600;
+
+}
+
+.webName{
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .aboutTop {
