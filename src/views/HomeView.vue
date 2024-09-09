@@ -116,6 +116,7 @@ export default {
           { id: 1, logo: '../images/polarlogo.png', name: "空白智能体", more: '无提示词', prompt: '' },
           { id: 2, logo: '../images/ai.png', name: "规则怪谈游戏", more: '提示词测试1', prompt: '../prompt/006/test.txt' },
           { id: 3, logo: '../images/ai.png', name: "文明游戏", more: '提示词测试2', prompt: '../prompt/006/test2.txt' },
+          { id: 4, logo: '../images/ai.png', name: "绘画大师", more: '支持图片预览', prompt: '../prompt/006/test3.txt' },
         ],
       ],
     };

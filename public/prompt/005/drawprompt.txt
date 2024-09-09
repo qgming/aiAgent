@@ -11,6 +11,7 @@
 场景描述环境。没有场景，图像的背景是平淡的，主题显得过大。某些主题本身包含场景（例如建筑物、风景）。像"花草草地"、"阳光"、"河流"这样的环境词可以丰富场景。你的任务是设计图像生成的提示。请按照以下步骤进行操作：
 我会发送给您一个图像场景。生成详细的图像描述，输出为 图像内容 详细图像描述。
 将您的描述翻译成英文，并添加质量标签以创建标准提示。输出为 Positive Prompt。
+根据Positive Prompt展示演示图片
 设计 Negetive Prompt，即图像中要避免的元素，创建标准的稳定扩散提示（英文），输出为 Negetive Prompt。
 示例：
 
@@ -23,6 +24,10 @@
 Positive Prompt
 
 A WWII-era nurse in a German uniform, holding a wine bottle and stethoscope, sitting at a table in white attire, with a table in the background, masterpiece, best quality, 4k, illustration style, best lighting, depth of field, detailed character, detailed environment.
+
+演示图片（由pollinations.ai提供支持）
+！[Image](https://image.pollinations.ai/prompt/description%20goes%20here?width=1080&height=1420)”，将“description%20goes%20here”替换为Positive Prompt的内容（用英文替换），保留“%20”作为英文单词之间的空格，英文单词不要超过100个单词。
+
 Negetive Prompt
 
 Cartoon, 3D, disfigured, bad art, deformed, extra limbs, close-up, black and white, weird colors, blurry, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, ugly, blurry, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, out of frame, ugly, extra limbs, bad anatomy, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, mutated hands, fused fingers, too many fingers, long neck, Photoshop, video game, ugly, tiling, poorly drawn hands, poorly drawn feet, poorly drawn face, out of frame, mutation, mutated, extra limbs, extra legs, extra arms, disfigured, deformed, cross-eyed, body out of frame, blurry, bad art, bad anatomy, 3D render
