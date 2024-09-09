@@ -6,10 +6,11 @@
       <div class="aboutTop">
         <img class="aboutLogo" src="../assets/images/polarlogo.png" alt="logo" srcset="">
         <p class="webName">极点智能体<br>Extreme Ai Agent</p>
-        <p class="version">V0.3.6(20)</p>
-        <p class="aboutEmail">📮qgming@qq.com</p>
+        <p class="version">V0.3.7(20)</p>
+        <p class="aboutEmail">qgming@qq.com</p>
         <p class="aboutBottom">©️极点维度<br>Extreme Dimension</p>
-        <p class="otherName">由<a href="https://siliconflow.cn/zh-cn/" target="_blank">硅基流动</a>提供默认大模型支持<br>通义千问（Qwen2-7B-Instruct）</p>
+        <p class="otherName">由<a href="https://siliconflow.cn/zh-cn/"
+            target="_blank">硅基流动</a>提供默认大模型支持<br>通义千问（Qwen2-7B-Instruct）</p>
       </div>
 
     </div>
@@ -56,7 +57,7 @@
 
 }
 
-.webName{
+.webName {
   font-size: 30px;
   font-weight: 600;
   text-align: center;

@@ -17,7 +17,10 @@
     </div>
     <div class="toolOutput" v-if="aiMessages.content">
       <div class="outputBox">
-        <div class="copyOutput" @click="copyToClipboard">复制全部</div>
+        <div class="outputOption">
+          <div class="copyOutput" @click="stopOutput">停止</div>
+          <div class="copyOutput" @click="copyToClipboard">复制全部</div>
+        </div>
         <MdPreview class="outputText" v-model="aiMessages.content" />
         <p class="charCount">字符数量: {{ charCount }}</p>
         <p class="charCount">内容由AI生成，请注意甄别</p>
@@ -41,14 +44,14 @@ export default {
   data() {
     return {
       // API配置
-      // API_KEY: 'sk-b25aa5538da243bb8d60f704f9941a8b',
-      // ENDPOINT: 'https://api.deepseek.com/v1/chat/completions',
-      // MODEL_NAME: 'deepseek-chat',
+      API_KEY: 'sk-b25aa5538da243bb8d60f704f9941a8b',
+      ENDPOINT: 'https://api.deepseek.com/v1/chat/completions',
+      MODEL_NAME: 'deepseek-chat',
 
       // API配置2
-      API_KEY: 'sk-cknwcfvxfuaemvbgfpcjhececitxulqcjbderqufacsdlrqh',
-      ENDPOINT: 'https://api.siliconflow.cn/v1/chat/completions',
-      MODEL_NAME: 'Qwen/Qwen2-7B-Instruct',
+      // API_KEY: 'sk-cknwcfvxfuaemvbgfpcjhececitxulqcjbderqufacsdlrqh',
+      // ENDPOINT: 'https://api.siliconflow.cn/v1/chat/completions',
+      // MODEL_NAME: 'Qwen/Qwen2-7B-Instruct',
 
 
       // 历史消息，存储用户和AI的对话记录
@@ -67,6 +70,7 @@ export default {
       count: '10',
       isVip: false, // 展示VIP效果
       sendOption: false, //连续对话是否开启
+      abortController: new AbortController(), // 添加一个 AbortController 实例
     };
   },
   watch: {
@@ -98,6 +102,15 @@ export default {
         console.error('无法复制文本：', err);
       }
     },
+
+    // 停止输出
+    stopOutput() {
+      this.abortController.abort(); // 中断请求
+      this.abortController = new AbortController(); // 重置 abortController
+      this.waiting = false;
+      this.openSuccess('输出已停止');
+    },
+
     //弹出成功消息
     openSuccess(text) {
       this.$message({
@@ -130,7 +143,8 @@ export default {
           model: this.MODEL_NAME, // 指定使用的模型名称
           stream: true, // 启用流式传输
           messages: input // 输入的消息内容
-        })
+        }),
+        signal: this.abortController.signal, // 添加信号以支持中断
       });
 
       // 检查响应是否成功
@@ -176,6 +190,8 @@ export default {
         }
       }
     },
+
+
 
     // 保存生成次数到本地存储
     saveCountToLocalStorage() {
@@ -224,6 +240,8 @@ export default {
 
     //发送消息!!!!
     async sendMessage(inputText) {
+      // 重新初始化 abortController
+      // this.abortController = new AbortController(); 
       //检查是否开启VIP及检查剩余次数
       const vipSwitch = localStorage.getItem('vipSwitch');
       // 如果 vipSwitch 存在且值为 true，则不执行关于 count 次数的函数
@@ -344,6 +362,7 @@ export default {
         }
       }
     },
+
   },
   created() {
     // 初始化本地变量
@@ -492,11 +511,17 @@ export default {
   margin-top: 15px;
 }
 
+.outputOption {
+  display: flex;
+  flex-direction: row;
+}
+
 .copyOutput {
   width: 100px;
   text-align: center;
   text-decoration: none;
   padding: 4px;
+  margin-left: 10px;
   font-size: 16px;
   background-color: white;
   border: 1px solid #eaeaea;
