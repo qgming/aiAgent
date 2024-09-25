@@ -99,8 +99,9 @@ export default {
         [
           { id: 1, logo: '../images/lvxing.png', name: "旅行规划师", more: '保姆级旅游规划师，衣食住行全包揽', prompt: '../prompt/004/lvxingguihua.txt' },
           { id: 2, logo: '../images/xiaohongshu.png', name: "婚姻法专家", more: '婚姻法专家', prompt: '../prompt/004/huiyinfa.txt' },
-          { id: 3, logo: '../images/taluo.png', name: "塔罗牌", more: '来玩塔罗牌', prompt: '../prompt/004/taluo.txt' },
+          { id: 3, logo: '../images/taluo.png', name: "塔罗牌", more: '来玩塔罗牌（仅供娱乐）', prompt: '../prompt/004/taluo.txt' },
           { id: 4, logo: '../images/chengzhangjiaolian.png', name: "成长教练", more: '给出专业的人生建议[需连续对话]', prompt: '../prompt/004/chengzhangjiaolian.txt' },
+          { id: 5, logo: '../images/taluo.png', name: "六爻占卜", more: '赛博六爻占卜（仅供娱乐）', prompt: '../prompt/004/6yao.txt' },
 
         ],
         // 极客005
