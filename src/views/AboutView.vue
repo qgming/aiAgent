@@ -4,9 +4,9 @@
       <RouterLink class="backHome" to="/">返回首页</RouterLink>
       <div class="aboutName">关于</div>
       <div class="aboutTop">
-        <img class="aboutLogo" src="../assets/images/polarlogo.png" alt="logo" srcset="">
+        <img class="aboutLogo" src="../assets/images/jdwdailogo.png" alt="logo" srcset="">
         <p class="webName">极点智能体<br>Extreme Ai Agent</p>
-        <p class="version">V0.3.7(22)</p>
+        <p class="version">V0.3.8(25)</p>
         <p class="aboutEmail">qgming@qq.com</p>
         <p class="aboutBottom">©️极点维度<br>Extreme Dimension</p>
         <p class="otherName">由<a href="https://siliconflow.cn/zh-cn/"

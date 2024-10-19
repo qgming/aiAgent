@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <img class="logo" src="../assets/images/polarlogo.png" alt="">
+    <img class="logo" src="../assets/images/jdwdailogo.png" alt="">
     <ol class="headerOl">
       <li>
         <RouterLink class="upVip" to="/setting">高级功能</RouterLink>

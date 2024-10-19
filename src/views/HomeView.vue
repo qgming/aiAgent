@@ -5,7 +5,7 @@
         <RouterLink class="toSetting" to="/setting">设置</RouterLink>
       </div>
       <div class="searchBox">
-        <img class="searchImg" src="../assets/images/polarlogo2.png" alt="">
+        <img class="searchImg" src="../assets/images/ai.png" alt="">
         <input type="text" class="searchInput">
       </div>
     </div>
@@ -86,13 +86,14 @@ export default {
         ],
         // 学习助手003
         [
-          { id: 1, logo: '../images/xielunwen.png', name: "论文助写", more: '像教授一样写论文', prompt: '../prompt/003/lunwenxiezuo.txt' },
-          { id: 2, logo: '../images/gailunwen.png', name: "论文改写", more: '文章降重，降低AI率', prompt: '../prompt/003/lunwengaixie.txt' },
-          { id: 3, logo: '../images/zhoubao.png', name: "学习任何东西", more: '帮你学习任何东西', prompt: '../prompt/003/xuexirenhe.txt' },
-          { id: 4, logo: '../images/feiman.png', name: "费曼学习法", more: '像费曼一样学习', prompt: '../prompt/003/feiman.txt' },
-          { id: 5, logo: '../images/think.png', name: "深度思考", more: '多角度深度思考，发现问题，解决问题', prompt: '../prompt/003/sikao.txt' },
-          { id: 6, logo: '../images/baike.png', name: "极点百科", more: '帮你了解任何东西', prompt: '../prompt/003/baike.txt' },
-          { id: 7, logo: '../images/teacher.png', name: "英文阅读讲师", more: '帮你学习英语阅读', prompt: '../prompt/003/xueyingyu.txt' },
+          { id: 1, logo: '../images/xielunwen.png', name: "学习计划", more: '帮你置顶任何方向的学习计划（需要开启连续对话）', prompt: '../prompt/003/xuexijihua.txt' },
+          { id: 2, logo: '../images/xielunwen.png', name: "论文助写", more: '像教授一样写论文', prompt: '../prompt/003/lunwenxiezuo.txt' },
+          { id: 3, logo: '../images/gailunwen.png', name: "论文改写", more: '文章降重，降低AI率', prompt: '../prompt/003/lunwengaixie.txt' },
+          { id: 4, logo: '../images/zhoubao.png', name: "学习任何东西", more: '帮你学习任何东西', prompt: '../prompt/003/xuexirenhe.txt' },
+          { id: 5, logo: '../images/feiman.png', name: "费曼学习法", more: '像费曼一样学习', prompt: '../prompt/003/feiman.txt' },
+          { id: 6, logo: '../images/think.png', name: "深度思考", more: '多角度深度思考，发现问题，解决问题', prompt: '../prompt/003/sikao.txt' },
+          { id: 7, logo: '../images/baike.png', name: "极点百科", more: '帮你了解任何东西', prompt: '../prompt/003/baike.txt' },
+          { id: 8, logo: '../images/teacher.png', name: "英文阅读讲师", more: '帮你学习英语阅读', prompt: '../prompt/003/xueyingyu.txt' },
 
         ],
         // 生活娱乐004
