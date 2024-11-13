@@ -43,15 +43,15 @@ export default {
 
   data() {
     return {
-      // API配置
-      API_KEY: 'sk-b25aa5538da243bb8d60f704f9941a8b',
-      ENDPOINT: 'https://api.deepseek.com/v1/chat/completions',
-      MODEL_NAME: 'deepseek-chat',
+      // API配置(已删除
+      // API_KEY: 'sk-b25aa5538da243bb8d60f704f9941a8b',
+      // ENDPOINT: 'https://api.deepseek.com/v1/chat/completions',
+      // MODEL_NAME: 'deepseek-chat',
 
-      // API配置2
-      // API_KEY: 'sk-cknwcfvxfuaemvbgfpcjhececitxulqcjbderqufacsdlrqh',
-      // ENDPOINT: 'https://api.siliconflow.cn/v1/chat/completions',
-      // MODEL_NAME: 'Qwen/Qwen2-7B-Instruct',
+      //API配置2
+      API_KEY: 'sk-cknwcfvxfuaemvbgfpcjhececitxulqcjbderqufacsdlrqh',
+      ENDPOINT: 'https://api.siliconflow.cn/v1/chat/completions',
+      MODEL_NAME: 'Qwen/Qwen2-7B-Instruct',
 
 
       // 历史消息，存储用户和AI的对话记录
